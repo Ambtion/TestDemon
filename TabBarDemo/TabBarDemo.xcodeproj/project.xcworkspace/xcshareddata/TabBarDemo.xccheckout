@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BF4324D5-3194-415E-8117-AE3CA9C47A03</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TabBarDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8AF131BC-1BBB-4F39-975D-7C712F7228A4</key>
+		<string>https://github.com/ColinEberhardt/VCTransitionsLibrary.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TabBarDemo/TabBarDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8AF131BC-1BBB-4F39-975D-7C712F7228A4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ColinEberhardt/VCTransitionsLibrary.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8AF131BC-1BBB-4F39-975D-7C712F7228A4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8AF131BC-1BBB-4F39-975D-7C712F7228A4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VCTransitionsLibrary</string>
+		</dict>
+	</array>
+</dict>
+</plist>
