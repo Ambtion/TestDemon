@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CEReversibleAnimationController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NSURLSessionDelegate>
 
 @property (nonatomic, strong) CEReversibleAnimationController *settingsAnimationController;
 

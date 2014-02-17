@@ -1,0 +1,7 @@
+
+platform :ios,      '7.0'  
+pod 'JSONKit','~>1.5pre'
+pod 'ASIHTTPRequest','~>1.8.1'
+pod 'SDWebImage/Core','~>3.5'
+pod 'SDWebImage/WebP','~>3.5'
+

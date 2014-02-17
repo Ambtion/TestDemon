@@ -22,14 +22,20 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        iconImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        
+        iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, frame.size.height - 10, frame.size.height - 10)];
         [self.contentView addSubview:iconImageView];
-        iconImageView.layer.cornerRadius = 20.f;
+        iconImageView.layer.cornerRadius = 15.f;
         iconImageView.layer.masksToBounds = YES;
-        self.contentView.layer.borderColor = [UIColor whiteColor].CGColor;
-        nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.bounds.size.height - 20, self.bounds.size.width, 20)];
-        nameLabel.textColor = [UIColor redColor];
+        
+        nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.height, 0, self.bounds.size.width - frame.size.height, frame.size.height)];
+        nameLabel.textColor = [UIColor blackColor];
+        
+        nameLabel.textAlignment = NSTextAlignmentLeft;
+        nameLabel.backgroundColor = [UIColor clearColor];
+        nameLabel.font = [UIFont systemFontOfSize:15.f];
         [self.contentView addSubview:nameLabel];
+        
     }
     return self;
 }

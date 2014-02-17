@@ -34,7 +34,8 @@
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    attributes.size = CGSizeMake(30, 30);
+    attributes.size = CGSizeMake(30 + 20, 40);
+//    attributes.transform3D = CATransform3DMakeRotation(M_PI /(random() % 4 + 3), 1, 1, 0);
     attributes.center = CGPointMake(_center.x - _radius * cosf(2 * indexPath.item * M_PI / 15),
                                     _center.y  - _radius * sinf(2 * indexPath.row * M_PI / 15) + (indexPath.row / 15) * 320);
     
@@ -50,7 +51,10 @@
     }
     return attributes;
 }
-
+- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity
+{
+    return proposedContentOffset;
+}
 #pragma mark --
 #pragma mark  Layout init  & final
 
