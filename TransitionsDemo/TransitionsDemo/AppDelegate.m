@@ -13,17 +13,30 @@
 
 @implementation AppDelegate
 
+//Document
+//https://developer.apple.com/library/ios/Documentation/FileManagement/Conceptual/DocumentInteraction_TopicsForIOS/Articles/OpeningSupportedFileTypes.html#//apple_ref/doc/uid/TP40010412-SW1
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //AppDelegateAccessor.navigationControllerAnimationController = [CECardsAnimationController new];
     //AppDelegateAccessor.navigationControllerInteractionController = [CEVerticalSwipeInteactionController new];
 //    [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
-    NSLog(@"Launched in background %d", UIApplicationStateBackground == application.applicationState);
+    
     return YES;
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    
+    return YES;
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    NSString * path = [[NSString stringWithFormat:@"%@",NSHomeDirectory()] stringByAppendingPathComponent:@"Document"];
+    NSLog(@"%@",path);
 }
 - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler
 {
-    
     NSLog(@"Save completionHandler");
     self.backgroundSessionCompletionHandler = completionHandler;
     //Save completionHandler;

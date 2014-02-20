@@ -2,6 +2,46 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.txt</string>
+				<string>public.plain-text</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>CFBundleTypeIconFiles</key>
+			<array>
+				<string>1.jpg</string>
+				<string>1.jpg</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Demon_text</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+		</dict>
+		<dict>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.jpeg</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>CFBundleTypeIconFiles</key>
+			<array>
+				<string>1.jpg</string>
+				<string>1.jpg</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Demon_jpeg</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+		</dict>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

@@ -14,6 +14,7 @@
 #import "FontViewDonwload.h"
 #import "DownloadController.h"
 #import "DynamicAnimatorController.h"
+#import "DocumentController.h"
 
 @interface ViewController () <UIViewControllerTransitioningDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 {
@@ -43,8 +44,7 @@
     
     [conlectView registerClass:[BindCell class] forCellWithReuseIdentifier:@"BindCell"];
     [self.view addSubview:conlectView];
-    nameArray = @[@"字体",@"相册",@"后台下载",@"DynamicAnimator",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义"
-                  @"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义"];
+    nameArray = @[@"字体",@"相册",@"后台下载",@"DynamicAnimator",@"UIDocumentInteractionController",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义",@"自定义"];
 }
 
 - (void)addEmotionEffestToView:(UIView *)view
@@ -122,6 +122,8 @@
             break;
             case 3:
             [self.navigationController pushViewController:[[DynamicAnimatorController alloc] init] animated:YES];
+        case 4:
+            [self.navigationController pushViewController:[[DocumentController alloc] init] animated:YES];
             break;
         default:
             break;
